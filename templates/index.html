@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data Converter</title>
+    <script>
+        function updateJsonToXmlAction() {
+            var checkbox = document.getElementById("validateCheckboxJsonToXml");
+            var form = document.getElementById("jsonToXmlConversionForm");
+            if (checkbox.checked) {
+                form.action = "/convert/json_to_xml/true";
+            } else {
+                form.action = "/convert/json_to_xml";
+            }
+        }
+
+        function updateXmlToJsonAction() {
+            var checkbox = document.getElementById("validateCheckboxXmlToJson");
+            var form = document.getElementById("xmlToJsonConversionForm");
+            if (checkbox.checked) {
+                form.action = "/convert/xml_to_json/true";
+            } else {
+                form.action = "/convert/xml_to_json";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Data Converter</h1>
+    <h2>JSON to XML Conversion</h2>
+    <form id="jsonToXmlConversionForm" method="post" onsubmit="updateJsonToXmlAction()">
+        <textarea name="json" rows="10" cols="50"></textarea><br>
+        <input type="checkbox" id="validateCheckboxJsonToXml" name="validate"> Validate XML<br>
+        <input type="submit" value="Convert">
+    </form>
+
+    <h2>XML to JSON Conversion</h2>
+    <form id="xmlToJsonConversionForm" method="post" onsubmit="updateXmlToJsonAction()">
+        <textarea name="xml" rows="10" cols="50"></textarea><br>
+        <input type="checkbox" id="validateCheckboxXmlToJson" name="validate"> Validate XML<br>
+        <input type="submit" value="Convert">
+    </form>
+</body>
+</html>

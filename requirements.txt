@@ -1,0 +1,4 @@
+xmlschema==3.2.1
+dicttoxml==1.7.16
+Flask==3.0.3
+xmltodict==0.13.0

@@ -1,0 +1,60 @@
+<PackageData>
+    <IdJwt>7611</IdJwt>
+    <EntityAction>Campaign_Add</EntityAction>
+    <SuccessResultList>
+        <Entrant>
+            <IdObject>4624</IdObject>
+            <Guid>ABCDEFGHIJKL</Guid>
+            <Snils>71744798250</Snils>
+            <IdGender>1</IdGender>
+            <Birthday>2000-02-14</Birthday>
+            <Birthplace>Россия</Birthplace>
+            <Phone>899999999</Phone>
+            <AvailabilityEduDoc>false</AvailabilityEduDoc>
+            <Surname>Яруллин</Surname>
+            <Name>Максим</Name>
+            <IdOksm>52</IdOksm>
+            <FreeEducationReason>
+                <IdFreeEducationReason>165</IdFreeEducationReason>
+            </FreeEducationReason>
+            <AddressList>
+                <Address>
+                    <IsRegistration>true</IsRegistration>
+                    <FullAddr>Санкт-Петербург, ул. Гороховая, д.11</FullAddr>
+                    <IdRegion>52</IdRegion>
+                    <City>санкт-Петербург</City>
+                </Address>
+                <Address>
+                    <IsRegistration>false</IsRegistration>
+                    <FullAddr>Санкт-Петербург, ул. Омская, д.11</FullAddr>
+                    <IdRegion>52</IdRegion>
+                    <City>Санкт-Петербург</City>
+                </Address>
+            </AddressList>
+            <DocumentList>
+                <Document>
+                    <Guid>ABCDEFGHIJKLMN</Guid>
+                    <FileHash>passport_hash</FileHash>
+                    <IdDocumentType>100001</IdDocumentType>
+                    <DocName>Паспорт гражданина Российской Федерации</DocName>
+                    <DocSeries>5661</DocSeries>
+                    <DocNumber>111111</DocNumber>
+                    <IssueDate>2019-09-08</IssueDate>
+                    <DocOrganization>МВД-АВОР.ПРДЛПАРОДАЬЕК</DocOrganization>
+                    <IdCheckStatus>51</IdCheckStatus>
+                </Document>
+                <Document>
+                    <Guid>ABCDEFGHIJK</Guid>
+                    <FileHash>resident_card_hash</FileHash>
+                    <IdDocumentType>100038</IdDocumentType>
+                    <DocName>Вид на жительство</DocName>
+                    <IdCheckStatus>8713</IdCheckStatus>
+                </Document>
+            </DocumentList>
+            <Photo>
+                <FileHash>photo_hash</FileHash>
+                <Fui>photo_fui</Fui>
+            </Photo>
+        </Entrant>
+    </SuccessResultList>
+</PackageData>

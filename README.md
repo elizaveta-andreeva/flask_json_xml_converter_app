@@ -3,7 +3,7 @@
 1. Склонировать репозиторий
 2. Установить все зависимости из `requirements.txt`
     ```
-    $ pip install -r tasks/requirements.txt
+    $ pip install -r requirements.txt
     ```
 3. Запустить сервер с помощью команды
     ```

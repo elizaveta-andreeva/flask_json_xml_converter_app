@@ -29,7 +29,6 @@ def traverse_json(json_dict: dict, result_dict: dict) -> dict:
             result_dict[tag] = []
             if isinstance(value, list):
                 for entrant in value:
-                    print(entrant)
                     result_dict[tag].append(traverse_json(entrant, {}))
             else:
                 result_dict[tag].append(traverse_json(value, {}))

@@ -57,7 +57,6 @@ def traverse_xsd(element: ElementTree.Element, json_data: dict, result: dict, pa
                 else:
                     result[parent][element.attrib['name']] = json_data[element.attrib['name']]
             elif 'minOccurs' in element.attrib and int(element.attrib['minOccurs']) == 0:
-                print(element.attrib['name'])
                 pass
             else:
                 if element.attrib['name'] in ['DocName', 'DocSeries', 'DocNumber', 'IssueDate', 'DocOrganization']:

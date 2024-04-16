@@ -30,8 +30,10 @@ def convert_json_to_xml(validate: bool) -> Response:
         if schema.is_valid(xml):
             return Response(xml, mimetype='text/xml', status=200)
         else:
-            schema.validate(xml)
-            return Response("XML does not match XSD schema", status=400)
+            try:
+                schema.validate(xml)
+            except xmlschema.XMLSchemaValidationError as e:
+                return Response(f"XML does not match XSD schema\n{e}", status=400)
 
     return Response(xml, mimetype='text/xml', status=200)
 
@@ -44,8 +46,10 @@ def convert_xml_to_json(validate: bool) -> Response:
 
     if validate:
         if not schema.is_valid(xml):
-            schema.validate(xml)
-            return Response("XML does not match XSD schema", status=400)
+            try:
+                schema.validate(xml)
+            except xmlschema.XMLSchemaValidationError as e:
+                return Response(f"XML does not match XSD schema\n{e}", status=400)
 
     json_result = convert_xml_to_dict(xml)
     return Response(json_result, mimetype='application/json', status=200)

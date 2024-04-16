@@ -16,14 +16,14 @@
 Без валидации xml по схеме xsd:
 http://127.0.0.1:5000/convert/json_to_xml
 
-С валидацией
+С валидацией:
 http://127.0.0.1:5000/convert/json_to_xml/true
 
 ## Конвертировать XML в JSON
 Без валидации xml по схеме xsd:
 http://127.0.0.1:5000/convert/xml_to_json
 
-С валидацией
+С валидацией:
 http://127.0.0.1:5000/convert/xml_to_json/true
 
 ## Формат входных данных
